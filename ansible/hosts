@@ -1,0 +1,4 @@
+[k8s_nodes]
+x.x.x.x ansible_user=root kubernetes_role="master"
+x.x.x.x ansible_user=root kubernetes_role="node"
+x.x.x.x ansible_user=root kubernetes_role="node"

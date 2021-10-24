@@ -1,0 +1,9 @@
+---
+- name: Copy metallb config map
+  template: src=metallb-cm.j2 dest=/root/metallb-cm.yaml mode=0644
+
+- name: Apply Metallsb Config Map
+  become: true
+  shell: |
+    kubectl apply -f /root/metallb-cm.yaml
+  when: kubernetes_role == 'master'

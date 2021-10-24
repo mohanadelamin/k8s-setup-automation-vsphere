@@ -1,0 +1,5 @@
+---
+# vars file for metallb
+metallb:
+  start: x.x.x.x
+  end: x.x.x.x
